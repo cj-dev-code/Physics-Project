@@ -6,10 +6,11 @@ Created on Thu Oct 24 10:41:32 2019
 """
 
 import wave
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.pylab import zeros, append
-from math import sin
+from matplotlib.pylab import zeros, append, figure, subplot2grid
+import matplotlib
+from math import sin, cos
 
 import matplotlib.animation as animation
 

@@ -23,6 +23,19 @@ from matplotlib.pylab import zeros, append, figure, subplot2grid
 import matplotlib.animation as animation
 import matplotlib
 
+
+# First, get our wav file, and declare our .wav hyperparameters
+file = wave.open("test.wav", 'rb')
+
+# SampleTime # Seconds per frame
+frameRate = file.frameRate() # samples per second in wav file
+sampleTime = frameRate**-1 # seconds per sample in wav file
+
+dualChannel = file.readframes(100000)
+lChannel = dualChannel[::2]
+
+
+
 # Make the figure framework to hold the Transform and wav file
 figure_1 = figure(num=0, figsize = (12, 9))
 figure_1.suptitle("Wave Fourier Transform Analysis", fontsize=12)
@@ -79,7 +92,9 @@ amp_freq, = axis_2.plot(axis_2_x, axis_2_data, '-b', label='Freqs')
 axis_1.legend([wav_plot], [wav_plot.get_label()])
 axis_2.legend([amp_freq], [amp_freq.get_label()])
 
-#start
+# Get the hyperparameters from the .wav file. Reference Testing.py
+# Append new data to our axis_1_x rather than "x"
+# Define all the variables we need to run the function
 
 def updateFunction(self):
     global x_t, axis_1_data

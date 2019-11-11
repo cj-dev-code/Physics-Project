@@ -79,7 +79,7 @@ axis_2.legend([sin_x_d1_plot], [sin_x_d1_plot.get_label()])
 axis_3.legend([sin_x_d2_plot], [sin_x_d2_plot.get_label()])
 
 x_t = 0 # starting theta = 0
-max_t = 5
+max_t = 5 # Max time to be displayed on a window at any x_t
 
 def updateFunction(self):
     global x_t, axis_1_data, axis_2_data, axis_3_data, axis_4_data, x

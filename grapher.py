@@ -87,7 +87,7 @@ def updateFunction(self):
     #y = lambda x: sin(x)
     #dy_dx = lambda x: cos(x) 
     #y_dx_dx = lambda x: -sin(x)
-    y = sin(x_t)# a list of points: y, let b be iter(y); next(b)
+    y = sin(x_t)#lChannel[sampleNum]# a list of points: y, let b be iter(y); next(b)
     dy_dx = cos(x_t) # like for a list of points: y, let b be iter(y); next(b)
     y_dx_dx = -sin(x_t) # like for a list of points: y, let b be iter(y); next(b)
     

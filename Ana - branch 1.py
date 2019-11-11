@@ -28,7 +28,7 @@ import matplotlib
 file = wave.open("test.wav", 'rb')
 
 # SampleTime # Seconds per frame
-frameRate = file.frameRate() # samples per second in wav file
+frameRate = file.getframerate() # samples per second in wav file
 sampleTime = frameRate**-1 # seconds per sample in wav file
 
 dualChannel = file.readframes(100000)

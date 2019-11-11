@@ -96,7 +96,6 @@ def updateFunction(self):
     axis_3_data = append(axis_3_data, y_dx_dx)
     x = append(x, x_t)
     
-    
     sin_x_plot.set_data(x, axis_1_data)
     sin_x_d1_plot.set_data(x, axis_2_data)
     sin_x_d2_plot.set_data(x, axis_3_data)

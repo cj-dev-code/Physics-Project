@@ -29,7 +29,7 @@ file = wave.open("test.wav", 'rb')
 
 # SampleTime # Seconds per frame
 frameRate = file.getframerate() # samples per second in wav file
-sampleTime = frameRate**-1 # seconds per sample in wav file
+sampleTime = frameRate**-1 # seconds 2qwhper sample in wav file
 
 dualChannel = file.readframes(100000)
 lChannel = dualChannel[::2]

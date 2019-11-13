@@ -18,6 +18,8 @@ dualChannel = file.readframes(100000)
 lChannel = dualChannel[::2]
 rChannel = dualChannel[1::2]
 
+print(type(lChannel))
+
 frLen = file.getframerate()**-1
 
 # Read all the wave data from the track into a dictionary of x and y coords
